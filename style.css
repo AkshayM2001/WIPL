@@ -11,7 +11,7 @@ body{
 }
 header{
     background: #2c2828dc;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -19,7 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 50; */
+    z-index: 50;
 }
 .logo{
     height: 50px;
@@ -44,15 +44,13 @@ header{
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-top: 30px;
     height: 100vh;
 }
 #text{
     position: absolute;
     font-size: 60px;
     color: #000000ed;
-}
-.para{
-    margin-top: 100px;
 }
 .para img{
     position: absolute;
@@ -84,29 +82,65 @@ header{
     margin: 240px 0 0 790px;
     
 }
-/* #wi{
-    display: flexbox;
-    width: 800px;
-    height: auto;
-    float: inline-start;
+.sec{
+    margin: 20px 120px 40px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
-#ham{
-    display: flexbox;
-    width: 530px;
-    height: auto;
-    top: 180px;
-    left: 400px;
+.Heading{
+    text-align: center;
+    position: sticky;
+    font-size: 55px;
 }
-#vo{
-    display: flexbox;
-    width: 560px;
-    height: auto;
-    top: 230px;
-    left: 790px;
+.co1{
+    color: white;
 }
-#kl{
-    display: flexbox;
-    width: 1200px;
-    height: auto;
-   float: inline-end;
-} */
+.co2{
+    color: rgb(242, 95, 27);
+}
+.co4{
+    color: rgb(22, 47, 238);
+}
+.co3{
+    color: rgb(110, 247, 56);
+}
+#ws{
+    height: 240px;
+    width: 320px;
+}
+#hs{
+    height: 240px;
+    width: 320px;
+}
+#vs{
+    height: 240px;
+    width: 320px;
+}
+#ks{
+    height: 240px;
+    width: 320px;
+}
+.menu{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+.menu a{
+    position: absolute;
+    left: calc(50%-10px);
+    top: 25px;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.2s linear,
+    top 0.2s linear,
+    left 0.2s linear,
+    visibility 0.2s linear;
+}
+.ws:checked~.menu a{
+    visibility: visible;
+    opacity: 1;
+
+}
