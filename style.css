@@ -4,14 +4,28 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+html{
+    color-scheme: light dark;
+}
 body{
     background: #f9f9f9;
     min-height: 100vh;
     overflow-x: hidden;
 }
+main{
+    width: min(70ch, 100% - 4rem);
+    margin-inline: auto;
+}
+img,
+svg,
+video{
+    max-width: 100%;
+    display: block;
+}
+
 header{
     background: #2c2828dc;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,7 +58,6 @@ header{
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-top: 30px;
     height: 100vh;
 }
 #text{
@@ -67,19 +80,18 @@ header{
 #ham{
     width: 530px;
     height: auto;
-    margin: 460px 0 0 400px;
+    margin: 460px 0 0 490px;
 }
 #vo{
     width: 560px;
     height: auto;
-    margin: 430px 0 0 800px;
+    margin: 430px 0 0 890px;
     
 }
 #kl{
-    width: 800px;
     height: auto;
-    width: 1400px;
-    margin: 240px 0 0 790px;
+    width: 710px;
+    margin: 490px 0 0 1300px;
     
 }
 .sec{
@@ -95,7 +107,7 @@ header{
     font-size: 55px;
 }
 .co1{
-    color: white;
+    color: rgb(235, 221, 221);
 }
 .co2{
     color: rgb(242, 95, 27);
@@ -122,25 +134,7 @@ header{
     height: 240px;
     width: 320px;
 }
-.menu{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-}
-.menu a{
-    position: absolute;
-    left: calc(50%-10px);
-    top: 25px;
-    opacity: 0;
-    visibility: hidden;
-
-    transition: opacity 0.2s linear,
-    top 0.2s linear,
-    left 0.2s linear,
-    visibility 0.2s linear;
-}
-.ws:checked~.menu a{
-    visibility: visible;
-    opacity: 1;
-
+.drop li{
+    position: relative;
+    
 }
