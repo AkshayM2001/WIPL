@@ -12,8 +12,3 @@ window.addEventListener('scroll',() => {
     kl.style.left = value * 0.5 + 'px';
     }
 );
-
-/* tried to pause hover*/
-$("#onabout").one("mouseover", function(){
-    $("#onabout").addClass('hed');
-});
